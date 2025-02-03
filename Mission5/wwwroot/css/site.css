@@ -1,0 +1,44 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 20px; /* Adds space between the images */
+    margin-top: 20px; /* Adds space below the h1 */
+}
+
+.image-container img {
+    max-width: 300px; /* Prevents images from being too large */
+    height: auto; /* Ensures the aspect ratio is maintained */
+    object-fit: cover; /* Keeps images visually appealing */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.request-form label,
+.request-form input,
+.request-form button,
+.request-form a {
+    display: block;
+    margin-bottom: 10px; /* Optional: adds space between elements */
+}
